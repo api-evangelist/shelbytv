@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: live probe of https://shelby.tv/.well-known/*
+host: https://shelby.tv
+note: >-
+  Shelby.tv is a defunct company; shelby.tv now serves only a shutdown/farewell
+  page hosted on Tumblr/Automattic infrastructure. The security.txt present at
+  the well-known path is Automattic's (Tumblr's parent), not a disclosure
+  program operated by Shelby.tv. Recorded here as a faithful record of what is
+  served at the domain, not as evidence of an active Shelby.tv security program.
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: shelbytv-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
